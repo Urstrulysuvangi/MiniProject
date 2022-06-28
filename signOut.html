@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="signOut.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">LogOut?</h1>
+          <p class="lead">Are you sure you want to logout?</p>
+          <button type="button" class="btn btn-primary btn-lg" id="yes" onclick="signOut()">Yes</button>
+          <button type="button" class="btn btn-primary btn-lg" id="takeMeBack">No</button>
+        </div>
+    </div>
+
+    <nav class="navbar fixed-bottom navbar-light" style="background-color: rgb(139 213 139 / 82%);">
+        <a class="navbar-brand " href="home.html">Home Section</a>
+        <a class="navbar-brand " href="example.html">News Section</a>
+        <a class="navbar-brand text-primary" href="signOut.html">Sign Out</a>
+    </nav>
+
+    <script>
+        document.getElementById("takeMeBack").addEventListener("click",function(){
+            window.location = "example.html";
+        })
+    </script>
+</body>
+</html>l
